@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incorporando Javascript em Paginas HMTL</title>
+    
+</head>
+<body>
+    <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+</body>
+
+<script type="text/javascript">
+    var variavel; //Declarando uma variavel cujo nome é variavel//
+    variavel = 10 + 10; //Atribuindo valores e aplicando uma operação matematica em uma variavel
+
+    /*UTILIZANDO A FUNCÇÃO NATIVA 'alert' para exibir uma caixa de dialogo na tela cujo conteudo sera o valor da variavel*/
+
+    alert(variavel);
+
+    var ResultadoMuliplicacao = multiplique (10,50); //chamando a função 'multiplique' passando dois valores 10 e 50
+
+    //Manipulando a arvore DOM a fim de exibir dentro da DIV declarada no HTML, o resultado da multiplicação juntamento com seu texto inicial//
+    var divLocal = document.getElementById('exibe_resultado');
+
+    /*Neste ponto a variavel divLocal é um objeto que representa a div declarada no HTML.
+    Sendo um objeto é possivel acessar seus atributos, como innerHTML, precedido do nome do objeto seguindo de um '_'   */
+    divLocal.innerHTML  += ResultadoMuliplicacao;
+
+    //definicão da funcção 'multiplique' que recebe dois parametros - numero1 e numero2
+    function multiplique(numero1, numero2){
+        //Declarando uma nova variavel que guardara o resultado da operação de multiplicação, Iniciando a variavel com valor de 0.
+    var resultado = 0;
+
+    resultado = numero1 * numero2;
+
+    return resultado;
+
+    }
+
+</script>
+
+</html>

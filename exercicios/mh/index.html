@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oipa</title>
+    <style>
+        p{
+            color: blue!important;
+        }
+
+        div p{
+            color: red;
+        }
+
+        p#com_pseudo_classe{
+            font-size: 12px;
+            color: #000000;
+        }
+        P#com_pseudo_classe::first-letter{
+            font-size: 26px;
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <div>Texto solto na DIV</div>
+    <p>Texto solto do paragrafo que é filho da DIV</p>
+</body>
+</html>
+/* pseudoclasses sao definidas pra definir um estado especial de um elemento, o estilo é temporario, tambem podemos mudar o estilo de um link q foi clicado, alterando uma cor ou alguma outra propriedade
+
+<a:active></a:active>
+<div:hover></div:hover>
+
+PSEUODELEMENTOS sao palavras chave, que adicionadas ou relacionadas a um seletor, permite que uma parte especifica seja estilizada, digamos q cria um atalho
+
+<p id="com_pseudo_classe">
+    Texto do paragrafo com pseudo classe</p>
+
+    PSEUODELEMENTOS:
+
+::after  --  img::after

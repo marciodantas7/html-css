@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!-- Fieldset cria seções dentro do formulario 
+    form action DEFINE A URL PARA QUAL OS DADOS DO FORMULARIO SERAO EVIADOS
+    form method DEFINE O METODO HTTP (POST OU GET) PARA O ENVIO DE DADOS
+FIELDSET É TIPO UMA MAIN, MAS PRA FORMULARIO
+    LEGEND LEGENDA
+    
+    Label for - > vincula a tag label ao campo no qual se refere, ESTE VINCULO FAZ COM QUE SEJA POSSIVEL CLICAR na label para ativar o campo relacionado
+
+    input min e maxlenght = o usuario vai colocar o seus dados, mim e max define o minimo e o maximo de campo possivel
+
+    INPUT TYPE = DEFINE O TIPO DE CAMPO E SOBRETUDO COMO ELE VAI SE COMPORTAR
+    
+    OPTION value, É PARECIDO COM INPUT, MAS JA SAO VALORES PREDEFINIdos pra o usuario escolher
+    -->
+
+    <form action="/pagina-processa-dados-do-form" method="post">
+
+        <fieldset>
+            <legend>Dados Gerais</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" id="nome">
+
+            <label for="Data de nascimento">Data de nascimento:</label>
+            <input type="text" id="data de nascimento">
+
+            <label for="CPF">CPF:</label>
+            <input type="cpf" maxlength="11" id="cpf">
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label for="tipo de endereco">Tipo:</label>
+            <select id="tipo de endereco">
+                <option value="">Selecione</option>
+                <option value="rua">Rua</option>
+                <option value="estrada">Estrada</option>
+                <option value="rodovia">Rodovia</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="logradouro_endereco">Logradouro</label>
+            <input type="text" id="numero_endereco">
+
+            <label for="numero_endereco">Nº</label>
+            <input type="text" id="numero_endereco">
+
+            <label for="complemento_endereco">Complemento:</label>
+            <input type="complemento_endereco" id="complemento_endereco">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Fale conosco</legend>
+            <label for="msg">Mensagem</label>
+            <textarea id="msg"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <button type="submit">Enviar sua mensagem</button>
+            <button type="reset">Limpar o Formulario</button>
+        </fieldset>
+
+
+
+
+
+    </form>
+</body>
+</html>

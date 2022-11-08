@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px;            
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+
+        thead, tfoot {
+            background-color: black;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: black;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23 100 500</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 164 580</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 919 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 550 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 433 000</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 750 450</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 123 500</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 965</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23 100 500</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 164 580</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 919 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 550 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 433 000</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 750 450</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 123 500</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 965</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23 100 500</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 164 580</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 919 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 550 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 433 000</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 750 450</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 123 500</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 965</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">23 100 500</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 164 580</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 919 000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 550 000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 433 000</td>
+            </tr> 
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 750 450</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 123 500</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 602 965</td>
+            </tr>             
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>210 147 125</strong></td>
+
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo deserunt odio qui animi enim corporis? Magni qui incidunt, repudiandae, alias illo velit illum laborum voluptatum provident dolor odio blanditiis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum nihil dolores, ex quas, aspernatur magnam eveniet ea neque eum cum praesentium? Similique facere culpa dolorum cum est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo dolorem tempore sit corrupti maiores, harum, ex, reprehenderit labore nesciunt voluptates nulla quam minima porro! Nulla, odit. Tempora, eligendi fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptatibus! Ut nam itaque assumenda modi totam? Soluta commodi, sapiente maiores repellat repudiandae voluptas aliquid velit nisi dolor, reprehenderit ut debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum vero saepe reiciendis harum soluta excepturi doloribus omnis perspiciatis, similique, distinctio cupiditate molestias, ea quidem ex officia sapiente! Dolore, vero nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, unde quibusdam. Veniam, corporis minima obcaecati, quisquam accusantium est quidem cumque quo at maxime, vel iusto ipsa impedit nemo doloremque velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatum eligendi sequi ex labore tenetur voluptate minus! Ratione nam magni atque, ex eveniet id, adipisci earum aliquid, cupiditate tenetur labore?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo deserunt odio qui animi enim corporis? Magni qui incidunt, repudiandae, alias illo velit illum laborum voluptatum provident dolor odio blanditiis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum nihil dolores, ex quas, aspernatur magnam eveniet ea neque eum cum praesentium? Similique facere culpa dolorum cum est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo dolorem tempore sit corrupti maiores, harum, ex, reprehenderit labore nesciunt voluptates nulla quam minima porro! Nulla, odit. Tempora, eligendi fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptatibus! Ut nam itaque assumenda modi totam? Soluta commodi, sapiente maiores repellat repudiandae voluptas aliquid velit nisi dolor, reprehenderit ut debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum vero saepe reiciendis harum soluta excepturi doloribus omnis perspiciatis, similique, distinctio cupiditate molestias, ea quidem ex officia sapiente! Dolore, vero nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, unde quibusdam. Veniam, corporis minima obcaecati, quisquam accusantium est quidem cumque quo at maxime, vel iusto ipsa impedit nemo doloremque velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatum eligendi sequi ex labore tenetur voluptate minus! Ratione nam magni atque, ex eveniet id, adipisci earum aliquid, cupiditate tenetur labore?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo deserunt odio qui animi enim corporis? Magni qui incidunt, repudiandae, alias illo velit illum laborum voluptatum provident dolor odio blanditiis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum nihil dolores, ex quas, aspernatur magnam eveniet ea neque eum cum praesentium? Similique facere culpa dolorum cum est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo dolorem tempore sit corrupti maiores, harum, ex, reprehenderit labore nesciunt voluptates nulla quam minima porro! Nulla, odit. Tempora, eligendi fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptatibus! Ut nam itaque assumenda modi totam? Soluta commodi, sapiente maiores repellat repudiandae voluptas aliquid velit nisi dolor, reprehenderit ut debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum vero saepe reiciendis harum soluta excepturi doloribus omnis perspiciatis, similique, distinctio cupiditate molestias, ea quidem ex officia sapiente! Dolore, vero nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, unde quibusdam. Veniam, corporis minima obcaecati, quisquam accusantium est quidem cumque quo at maxime, vel iusto ipsa impedit nemo doloremque velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatum eligendi sequi ex labore tenetur voluptate minus! Ratione nam magni atque, ex eveniet id, adipisci earum aliquid, cupiditate tenetur labore?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo deserunt odio qui animi enim corporis? Magni qui incidunt, repudiandae, alias illo velit illum laborum voluptatum provident dolor odio blanditiis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum nihil dolores, ex quas, aspernatur magnam eveniet ea neque eum cum praesentium? Similique facere culpa dolorum cum est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo dolorem tempore sit corrupti maiores, harum, ex, reprehenderit labore nesciunt voluptates nulla quam minima porro! Nulla, odit. Tempora, eligendi fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptatibus! Ut nam itaque assumenda modi totam? Soluta commodi, sapiente maiores repellat repudiandae voluptas aliquid velit nisi dolor, reprehenderit ut debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum vero saepe reiciendis harum soluta excepturi doloribus omnis perspiciatis, similique, distinctio cupiditate molestias, ea quidem ex officia sapiente! Dolore, vero nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, unde quibusdam. Veniam, corporis minima obcaecati, quisquam accusantium est quidem cumque quo at maxime, vel iusto ipsa impedit nemo doloremque velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatum eligendi sequi ex labore tenetur voluptate minus! Ratione nam magni atque, ex eveniet id, adipisci earum aliquid, cupiditate tenetur labore?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nemo deserunt odio qui animi enim corporis? Magni qui incidunt, repudiandae, alias illo velit illum laborum voluptatum provident dolor odio blanditiis.lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto illum nihil dolores, ex quas, aspernatur magnam eveniet ea neque eum cum praesentium? Similique facere culpa dolorum cum est hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque explicabo dolorem tempore sit corrupti maiores, harum, ex, reprehenderit labore nesciunt voluptates nulla quam minima porro! Nulla, odit. Tempora, eligendi fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, voluptatibus! Ut nam itaque assumenda modi totam? Soluta commodi, sapiente maiores repellat repudiandae voluptas aliquid velit nisi dolor, reprehenderit ut debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum vero saepe reiciendis harum soluta excepturi doloribus omnis perspiciatis, similique, distinctio cupiditate molestias, ea quidem ex officia sapiente! Dolore, vero nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, unde quibusdam. Veniam, corporis minima obcaecati, quisquam accusantium est quidem cumque quo at maxime, vel iusto ipsa impedit nemo doloremque velit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatum eligendi sequi ex labore tenetur voluptate minus! Ratione nam magni atque, ex eveniet id, adipisci earum aliquid, cupiditate tenetur labore?</p>
+</body>
+</html>
